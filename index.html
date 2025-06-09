@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans - Your AI Service</title>
+    <style>
+        /* Gaya dasar seperti TermAI.cc */
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f9fafb;
+            color: #111827;
+        }
+        .pricing-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+        .pricing-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .pricing-subtitle {
+            color: #6b7280;
+            margin-bottom: 3rem;
+        }
+        .pricing-cards {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .pricing-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            width: 300px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e5e7eb;
+            transition: transform 0.3s;
+        }
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .card-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 1rem 0;
+        }
+        .card-features {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin: 2rem 0;
+        }
+        .card-features li {
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .card-button {
+            width: 100%;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .primary-button {
+            background: #4f46e5;
+            color: white;
+        }
+        .primary-button:hover {
+            background: #4338ca;
+        }
+    </style>
+</head>
+<body>
+    <section class="pricing-section">
+        <h1 class="pricing-title">Pricing Plans</h1>
+        <p class="pricing-subtitle">Choose the perfect plan for your needs</p>
+        
+        <div class="pricing-cards">
+            <!-- Free Plan -->
+            <div class="pricing-card">
+                <h3 class="card-title">Free</h3>
+                <p class="card-price">$0<span>/month</span></p>
+                <ul class="card-features">
+                    <li>✓ 100 credits/month</li>
+                    <li>✓ Basic AI models</li>
+                    <li>✓ Community support</li>
+                </ul>
+                <button class="card-button">Get Started</button>
+            </div>
+            
+            <!-- Pro Plan (Highlighted) -->
+            <div class="pricing-card" style="border: 2px solid #4f46e5;">
+                <h3 class="card-title">Pro</h3>
+                <p class="card-price">$20<span>/month</span></p>
+                <ul class="card-features">
+                    <li>✓ 1000 credits/month</li>
+                    <li>✓ Advanced AI models</li>
+                    <li>✓ Priority support</li>
+                    <li>✓ API access</li>
+                </ul>
+                <button class="card-button primary-button">Upgrade Now</button>
+            </div>
+            
+            <!-- Enterprise Plan -->
+            <div class="pricing-card">
+                <h3 class="card-title">Enterprise</h3>
+                <p class="card-price">Custom</p>
+                <ul class="card-features">
+                    <li>✓ Unlimited credits</li>
+                    <li>✓ Dedicated servers</li>
+                    <li>✓ 24/7 support</li>
+                    <li>✓ Custom AI training</li>
+                </ul>
+                <button class="card-button">Contact Sales</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
